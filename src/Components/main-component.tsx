@@ -1,3 +1,5 @@
+import { Navbar } from "./Navbar/navbar.tsx"
+
 export const MainComponent=()=>{
-  return <><h1>This is main component</h1></>
+  return <><Navbar/></>
 }
