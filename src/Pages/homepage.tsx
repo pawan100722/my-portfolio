@@ -1,11 +1,11 @@
 import myImage from '../Images/profile_pic.jpg';
-// import '../CSS/homepage.css';
+import '../Styles/homepage.css';
 
 export const Homepage=()=>{
   return (
     <>
-      <div className="main-container">
-          <img src={myImage} />
+      <div className="homepage-main-container">
+          <img className='homepage-image' src={myImage} />
         <div className="text-container">
           <p className='intro-text'>
             Hi my name is Pawan Kumar. I am a <span className='highlighted-text'>Software Engineer</span>. I
