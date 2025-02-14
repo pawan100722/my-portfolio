@@ -1,4 +1,4 @@
-.navbar-container{
+.navbar-container {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
@@ -8,54 +8,46 @@
   min-height: 15dvh;
 }
 
-.navbar-routes-container{
+.navbar-routes-container {
   height: 15dvh;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   gap: 20px;
   padding: 30px;
-  /* transition: height 1.8s linear, opacity 0.6s linear; */
   transition-property: height, opacity;
-  transition-timing-function: liner, liner;
-  transition-duration: 0.6s, 0.4s;
-
-  /* transition-property: opacity;
-  transition-timing-function: liner;
-  transition-duration: 0.6s; */
+  transition-timing-function: ease, ease;
+  transition-duration: 0.5s, 0s;
 }
 
-
-.navbar-list{
+.navbar-list {
   list-style: none;
   margin: 10px;
   width: 155px;
 }
 
-.navbar-link{
+.navbar-link {
   font-size: 2rem;
-  text-decoration: none;  
+  text-decoration: none;
   border-radius: 15px;
   color: white;
   padding: 4px 4px 4px 4px;
   transition: font-size 0.2s linear;
 }
 
-.navbar-link:hover{
+.navbar-link:hover {
   font-size: 2.1rem;
-  color:rgb(200, 210, 220)
+  color: rgb(200, 210, 220);
 }
 
-
-
-.hamburger-logo{
+.hamburger-logo {
   width: 4rem;
   height: 3.5rem;
-  opacity:0;
+  opacity: 0;
   margin: 20px 10px 0 0;
 }
 
-@media (max-width:600px){
-  .navbar-routes-container{
+@media (max-width: 600px) {
+  .navbar-routes-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -63,29 +55,33 @@
     width: 100dvw;
     opacity: 0;
     height: 0;
+    padding: 15px 0 15px 0;
   }
 
-  .hamburger-logo{
-    opacity:1;
+  .hamburger-logo {
+    opacity: 1;
+  }
+
+  .navbar-link {
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 15px;
+    color: white;
+    padding: 4px 4px 4px 4px;
+    transition: font-size 0.2s linear;
   }
 }
 
-@media(min-width:600px){
-  .hamburger-logo{
-    width: 0
+@media (min-width: 600px) {
+  .hamburger-logo {
+    width: 0;
   }
 }
 
-.visible{
-  opacity:1
+.visible {
+  opacity: 1;
 }
 
-.auto-height{
+.auto-height {
   height: 35dvh;
 }
-
-
-
-
-
-
