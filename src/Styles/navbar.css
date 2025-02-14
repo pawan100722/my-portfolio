@@ -9,13 +9,19 @@
 }
 
 .navbar-routes-container{
+  height: 15dvh;
   display:flex;
   justify-content: space-between;
   gap: 20px;
   padding: 30px;
-  transition-property: opacity;
+  /* transition: height 1.8s linear, opacity 0.6s linear; */
+  transition-property: height, opacity;
+  transition-timing-function: liner, liner;
+  transition-duration: 0.6s, 0.4s;
+
+  /* transition-property: opacity;
   transition-timing-function: liner;
-  transition-duration: 0.6s;
+  transition-duration: 0.6s; */
 }
 
 
@@ -56,6 +62,7 @@
     margin: auto;
     width: 100dvw;
     opacity: 0;
+    height: 0;
   }
 
   .hamburger-logo{
@@ -72,6 +79,12 @@
 .visible{
   opacity:1
 }
+
+.auto-height{
+  height: 35dvh;
+}
+
+
 
 
 

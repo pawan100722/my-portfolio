@@ -18,7 +18,7 @@ export const Navbar = () => {
       <nav>
         <div className="navbar-container">
           <ul
-            className={`navbar-routes-container ${isMenuOpen ? "visible" : ""}`}
+            className={`navbar-routes-container ${isMenuOpen ? "visible auto-height" : ""}`}
           >
             <li className="navbar-list">
               <a href="#/" className="navbar-link">
