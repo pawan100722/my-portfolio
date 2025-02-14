@@ -3,14 +3,15 @@
   justify-content: flex-end;
   align-items: flex-start;
   background-color: black;
-  width: 100dwv;
+  width: 100dvw;
   margin: 0 0 20px 0;
+  min-height: 15dvh;
 }
 
 .navbar-routes-container{
   display:flex;
-  justify-content: space-evenly;
-  gap: 10px;
+  justify-content: space-between;
+  gap: 20px;
   padding: 30px;
   transition-property: opacity;
   transition-timing-function: liner;
@@ -29,12 +30,13 @@
   text-decoration: none;  
   border-radius: 15px;
   color: white;
-  padding: 4px 8px 4px 8px;
+  padding: 4px 4px 4px 4px;
+  transition: font-size 0.2s linear;
 }
 
 .navbar-link:hover{
-  background-color: rgba(255, 255, 255, 0.748);
-  color:black;
+  font-size: 2.1rem;
+  color:rgb(200, 210, 220)
 }
 
 
@@ -58,6 +60,12 @@
 
   .hamburger-logo{
     opacity:1;
+  }
+}
+
+@media(min-width:600px){
+  .hamburger-logo{
+    width: 0
   }
 }
 
