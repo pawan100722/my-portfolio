@@ -8,7 +8,6 @@ import { HamburgerIcon } from "../../Icons/HamburgerIcon";
 export const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState<boolean>(false);
 
-  // const baseUrl='/Pawan-Kumar-Portfolio'
 
   const handleHamburgerClick = () => {
     setMenuOpen(!isMenuOpen);
@@ -17,10 +16,10 @@ export const Navbar = () => {
   return (
     <>
       <nav>
-        <div
-          className="navbar-container"
-        >
-          <ul className="navbar-routes-container">
+        <div className="navbar-container">
+          <ul
+            className={`navbar-routes-container ${isMenuOpen ? "visible" : ""}`}
+          >
             <li className="navbar-list">
               <a href="#/" className="navbar-link">
                 Home
@@ -28,7 +27,7 @@ export const Navbar = () => {
             </li>
 
             <li className="navbar-list">
-              <a  href={`#/my-skills`} className="navbar-link">
+              <a href={`#/my-skills`} className="navbar-link">
                 My Skills
               </a>
             </li>
@@ -48,14 +47,14 @@ export const Navbar = () => {
               </a>
             </li>
           </ul>
+          <div
+            className="hamburger-logo navbar-link"
+            onClick={handleHamburgerClick}
+          >
+            <HamburgerIcon />
+          </div>
         </div>
 
-        <div
-          className="hamburger-logo navbar-link"
-          onClick={handleHamburgerClick}
-        >
-          {/* <HamburgerIcon /> */}
-        </div>
         <NavbarRoutes />
       </nav>
     </>
