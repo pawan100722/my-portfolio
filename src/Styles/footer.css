@@ -1,0 +1,10 @@
+.footer-container{
+  background-color: black;
+  color:white;
+  max-width: 100dvw;
+  height: 4.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

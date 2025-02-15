@@ -1,3 +1,4 @@
+import { Footer } from '../Components/footer';
 import myImage from '../Images/profile_pic.jpg';
 import '../Styles/homepage.css';
 
@@ -12,6 +13,9 @@ export const Homepage=()=>{
             am skilled in <span className='highlighted-text'>Web Development</span>
           </p>
         </div>
+        <footer className='homepage-footer'>
+          <Footer/>
+        </footer>
       </div>
     </>
   );

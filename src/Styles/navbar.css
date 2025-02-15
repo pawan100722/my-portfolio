@@ -6,6 +6,8 @@
   width: 100dvw;
   margin: 0 0 20px 0;
   min-height: 15dvh;
+  position: fixed;
+  top:0;
 }
 
 .navbar-routes-container {
