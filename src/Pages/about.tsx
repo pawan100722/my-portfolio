@@ -26,8 +26,8 @@ export const About=()=>{
             and JavaScript.
           </li>
         </ul>
-        <p className="about-tech-skills-container">
-          <p className="about-skill-heading">Key Skills</p>
+        <div className="about-tech-skills-container">
+          <div className="about-skill-heading">Key Skills</div>
           <ul>
             <li>
               <span className="about-skill-heading2">Backend:</span> Node.js, Nest.js, REST
@@ -42,7 +42,7 @@ export const About=()=>{
           </ul>
           I am passionate about building both backend systems and user-friendly
           interfaces, and I always aim to optimize performance and code quality.
-        </p>
+        </div>
       </div>
 
       <div className="about-contact-container">
