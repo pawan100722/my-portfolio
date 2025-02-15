@@ -27,6 +27,7 @@
 
 .skill-desc-main-container{
   margin-top: 50px ;
+  margin-bottom: 2rem;
 }
 
 .skill-desc-container{
@@ -63,5 +64,15 @@
   .skill-desc-container{
     justify-content: center;
     /* row-gap: 10px; */
+  }
+
+  .skill-heading{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .skill-page-main-heading{
+    font-size: 2rem;
+    width: 70%;
   }
 }

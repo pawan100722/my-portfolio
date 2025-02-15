@@ -1,4 +1,5 @@
 import { Experience } from '../Components/experience';
+import { Footer } from '../Components/footer';
 import milestoneLogo from '../Logos/milestoneos-logo.jpg';
 import pragmaLogo from '../Logos/pragma-logo.jpg';
 import '../Styles/experiences.css'
@@ -32,6 +33,7 @@ export const Experiences=()=>{
           to="Oct 2024"
         />
       </div>
+      <Footer/>
     </div>
   );
 }

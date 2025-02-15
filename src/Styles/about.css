@@ -51,6 +51,7 @@
   margin:auto;
   margin-top: 20px;
   border-top: 2px solid brown;
+  margin-bottom: 2rem;
 }
 
 .about-detail-container{
@@ -65,4 +66,9 @@
   word-break: break-all;
 }
 
-/* @media(max-width: 600px){} */
+@media(max-width: 600px){
+  .about-page-main-heading{
+    width: 70%;
+    font-size: 2rem;
+  }
+}

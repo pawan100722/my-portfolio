@@ -5,6 +5,7 @@ import jsLogo from '../Logos/js-logo.png';
 import reactLogo from '../Logos/reactjs-logo.jpg';
 import nodeLogo from '../Logos/nodejs-logo.png';
 import '../Styles/skills.css'
+import { Footer } from '../Components/footer';
 
 export const MySkills=()=>{
   return (
@@ -46,6 +47,8 @@ export const MySkills=()=>{
         description="With Node.js, I am able to create robust back-end applications that complement front-end functionality. I use it to handle server-side logic, manage databases, and build RESTful APIs."
         logo={nodeLogo}
       />
+
+      <Footer/>
     </div>
   );
 }

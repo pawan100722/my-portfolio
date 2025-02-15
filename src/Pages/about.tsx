@@ -1,5 +1,6 @@
 import '../Styles/about.css';
 import { AboutDetail } from '../Components/about-detail';
+import { Footer } from '../Components/footer';
 
 export const About=()=>{
   return (
@@ -54,6 +55,7 @@ export const About=()=>{
         <AboutDetail title="Phone" detail="8433004706" />
         {/* <AboutDetail title="Email" detail="pawan100722@gmail.com" /> */}
       </div>
+      <Footer/>
     </div>
   );
 }
