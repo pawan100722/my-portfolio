@@ -4,6 +4,13 @@
   text-wrap: wrap;
 }
 
+.about-page-main-heading{
+  font-size: 3rem;
+  width: 10%;
+  font-style: oblique;
+  margin: auto;
+}
+
 .about-summary-container{
   width: 80%;
   margin: auto;

@@ -4,6 +4,7 @@ import { AboutDetail } from '../Components/about-detail';
 export const About=()=>{
   return (
     <div className="about-page-main-container">
+      <h1 className="about-page-main-heading">About</h1>
       <div className="about-summary-container">
         <p className="about-short-summary">
           I am Pawan Kumar, a software engineer with over 2 years of experience
@@ -30,14 +31,16 @@ export const About=()=>{
           <div className="about-skill-heading">Key Skills</div>
           <ul>
             <li>
-              <span className="about-skill-heading2">Backend:</span> Node.js, Nest.js, REST
-              APIs, MongoDB, MySQL
+              <span className="about-skill-heading2">Backend:</span> Node.js,
+              Nest.js, REST APIs, MongoDB, MySQL
             </li>
             <li>
-              <span className="about-skill-heading2">Frontend:</span> React.js, HTML5, CSS3
+              <span className="about-skill-heading2">Frontend:</span> React.js,
+              HTML5, CSS3
             </li>
             <li>
-              <span className="about-skill-heading2">Version Control:</span> Git, GitHub
+              <span className="about-skill-heading2">Version Control:</span>{" "}
+              Git, GitHub
             </li>
           </ul>
           I am passionate about building both backend systems and user-friendly
@@ -46,7 +49,7 @@ export const About=()=>{
       </div>
 
       <div className="about-contact-container">
-        <h1 className='about-skill-heading'>Contact Information</h1>
+        <h1 className="about-skill-heading">Contact Information</h1>
         <AboutDetail title="Email" detail="pawan100722@gmail.com" />
         <AboutDetail title="Phone" detail="8433004706" />
         {/* <AboutDetail title="Email" detail="pawan100722@gmail.com" /> */}

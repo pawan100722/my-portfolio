@@ -1,6 +1,14 @@
 .experiences-page-main-container{
   /* margin-top: 5rem; */
-  margin-top: 15rem;
+  margin-top: 10rem;
+}
+
+.experiences-page-main-heading{
+  margin :20px auto 20px auto;
+  width: 40%;
+  font-size: 3rem;
+  font-weight: bolder;
+  font-style: oblique;
 }
 
 .experience-box{
@@ -11,7 +19,7 @@
 }
 
 .experience-line{
-  width: 100%;
+  width: 90%;
   height: 2px;
   border: 3px solid brown;
 }
@@ -26,13 +34,13 @@
 .experience-component-container{
   background-color: aliceblue;
   border: 2px solid rgb(161, 161, 99);
-  border-top-left-radius: 15%;
-  /* border-top-right-radius: 25px; */
-  border-bottom-right-radius: 15%;
-  /* border-bottom-left-radius: 50px; */
-  padding: 1rem;
+  border-top-left-radius: 10%;
+  /* border-top-right-radius: 5%; */
+  border-bottom-right-radius: 10%;
+  /* border-bottom-left-radius: 5%; */
+  padding: 2rem 1rem 2rem 1rem;
   margin: 10px;
-  width: 60%;
+  width: 50%;
 }
 
 .experience-component-logo{

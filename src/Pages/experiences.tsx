@@ -6,9 +6,12 @@ import '../Styles/experiences.css'
 export const Experiences=()=>{
   return (
     <div className="experiences-page-main-container">
+      <h1 className="experiences-page-main-heading">
+        My Professional Experiences
+      </h1>
       <div className="experience-box">
         <Experience
-        logo={milestoneLogo}
+          logo={milestoneLogo}
           designation="Software Trainee"
           companyName="MilestoneOS"
           from="Dec 2021"
@@ -22,7 +25,7 @@ export const Experiences=()=>{
         <div className="experience-line"></div>
         <div className="experience-circle"></div>
         <Experience
-        logo={pragmaLogo}
+          logo={pragmaLogo}
           designation="Software Engineer"
           companyName="Pragma Apps and Technologies Private Limited"
           from="Aug 2022"
