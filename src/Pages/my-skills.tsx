@@ -3,16 +3,17 @@ import htmlLogo from '../Logos/html-logo.png';
 import cssLogo from '../Logos/css-logo.png';
 import jsLogo from '../Logos/js-logo.png';
 import reactLogo from '../Logos/reactjs-logo.jpg';
-import nodeLogo from '../Logos/nodejs-logo.png'
+import nodeLogo from '../Logos/nodejs-logo.png';
+import '../Styles/skills.css'
 
 export const MySkills=()=>{
   return (
-    <div className="my-skills-main-container">
-      <div className="skill-head-container">
-        <h1 className="main-heading">My Skills</h1>
-        <p className="main-description">
+    <div className="skills-page-main-container">
+      <div className="skill-page-head-container">
+        <h1 className="skill-page-main-heading">My Skills</h1>
+        <p className="skill-page-main-description">
           As a passionate software engineer specializing in web development, I
-          have developed a strong foundation in the following technologies:
+          have developed a strong foundation in the following technologies
         </p>
       </div>
       <SkillDescription
