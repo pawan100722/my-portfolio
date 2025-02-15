@@ -1,6 +1,7 @@
 import { Experience } from '../Components/experience';
 import milestoneLogo from '../Logos/milestoneos-logo.jpg';
 import pragmaLogo from '../Logos/pragma-logo.jpg';
+import '../Styles/experiences.css'
 
 export const Experiences=()=>{
   return (
@@ -13,13 +14,13 @@ export const Experiences=()=>{
           from="Dec 2021"
           to="July 2022"
         />
-        <div className="line"></div>
-        <div className="circle"></div>
+        <div className="experience-circle"></div>
+        <div className="experience-line"></div>
       </div>
 
       <div className="experience-box">
-        <div className="circle"></div>
-        <div className="line"></div>
+        <div className="experience-line"></div>
+        <div className="experience-circle"></div>
         <Experience
         logo={pragmaLogo}
           designation="Software Engineer"
