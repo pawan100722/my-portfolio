@@ -31,9 +31,10 @@
 
 .skill-desc-container{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+  row-gap: 10px;
   background-color: antiquewhite;
   margin: 20px auto;
   padding: 25px;
@@ -43,7 +44,7 @@
 }
 
 .skill-logo{
-  width: 10%;
+  width:200px;
   border-radius: 50%;
 }
 
@@ -56,4 +57,11 @@
     margin-left: 6%;
     font-size: 2.5rem;
     font-style: oblique;
+}
+
+@media(max-width:600px){
+  .skill-desc-container{
+    justify-content: center;
+    /* row-gap: 10px; */
+  }
 }
