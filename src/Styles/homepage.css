@@ -5,25 +5,21 @@
   align-items: center;
   /* gap: 10px; */
   height: 450px;
-  margin-top: 7.5rem;
+  margin-top: 5.5rem;
   overflow-y: none;
   background-color: #edeec9;
-  height: 80dvh;
+  height: 77dvh;
 }
 
 .homepage-image{
-  width: 20%;
+  width: 250px;
   border-bottom: 5px solid red;
   border-top: 5px solid green;
   border-radius: 50%;
+  margin-top: 15px;
 }
 
 
-.homepage-footer{
-  position: fixed;
-  bottom: 0;
-  width: 100dvw;
-}
 
 .intro-text{
   font-size: 1.6rem;

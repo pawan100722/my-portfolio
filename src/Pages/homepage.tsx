@@ -13,10 +13,10 @@ export const Homepage=()=>{
             am skilled in <span className='highlighted-text'>Web Development</span>
           </p>
         </div>
+      </div>
         <footer className='homepage-footer'>
           <Footer/>
         </footer>
-      </div>
     </>
   );
 }
