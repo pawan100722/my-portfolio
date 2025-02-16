@@ -10,7 +10,7 @@
 }
 
 .footer-text{
-  width: 80%;
-  margin:auto;
+  /* margin:auto; */
+  padding: 0 30px 0 30px;
 }
 

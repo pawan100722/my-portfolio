@@ -3,10 +3,12 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  gap: 50px;
+  /* gap: 10px; */
   height: 450px;
-  margin-top: 9.4rem;
+  margin-top: 7.5rem;
   overflow-y: none;
+  background-color: #edeec9;
+  height: 80dvh;
 }
 
 .homepage-image{
@@ -24,5 +26,21 @@
 }
 
 .intro-text{
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  margin:auto;
+  width: 75%;
+  padding: 10px;
+}
+
+/* .text-container{} */
+
+.highlighted-text{
+  font-size: 2rem;
+  color:teal;
+}
+
+@media(max-width:600px){
+  .homepage-image{
+    width: 40%;
+  }
 }
