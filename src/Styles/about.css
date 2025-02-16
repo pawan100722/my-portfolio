@@ -54,6 +54,9 @@
   margin:auto;
   margin-top: 20px;
   border-top: 2px solid brown;
+  border-bottom: 2px solid brown;
+  padding: 40px;
+
   margin-bottom: 2rem;
 }
 
@@ -78,4 +81,18 @@
     width: 70%;
     font-size: 2rem;
   }
+}
+
+.contact-icons-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 25px;
+  margin: 10px 0 10px 0;
+}
+
+.contact-icon{
+  width: 40px;
+  cursor: pointer;
+  color: black;
 }

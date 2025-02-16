@@ -1,6 +1,8 @@
 import '../Styles/about.css';
 import { AboutDetail } from '../Components/about-detail';
 import { Footer } from '../Components/footer';
+import { GithubIcon } from '../Icons/GithubIcon';
+import { LinkedinIcon } from '../Icons/LinkedinIcon';
 
 export const About=()=>{
   return (
@@ -55,7 +57,21 @@ export const About=()=>{
         <AboutDetail title="Phone" detail="8433004706" />
         {/* <AboutDetail title="Email" detail="pawan100722@gmail.com" /> */}
       </div>
-      <Footer/>
+
+      <div className="contact-icons-container">
+        <a className="contact-icon" target='blank' href="https://github.com/pawan100722">
+          <GithubIcon />
+        </a>
+
+        <a
+          className="contact-icon"
+          target='blank'
+          href="https://www.linkedin.com/in/pawan-kumar-8477801a0"
+        >
+          <LinkedinIcon />
+        </a>
+      </div>
+      <Footer />
     </div>
   );
 }
