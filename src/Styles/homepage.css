@@ -41,9 +41,9 @@
 
 @media(max-width:600px){
   .homepage-main-container{
-    margin-top: 5rem;
+    margin-top: 5.5rem;
   }
   .homepage-image{
-    width: 40%;
+    width: 45%;
   }
 }
