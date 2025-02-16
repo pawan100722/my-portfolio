@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import  { useEffect, useState } from "react";
 import "../../Styles/navbar.css";
 import { NavbarRoutes } from "./navbar-routes";
 import { HamburgerIcon } from "../../Icons/HamburgerIcon";
@@ -12,6 +12,14 @@ export const Navbar = () => {
   const handleHamburgerClick = () => {
     setMenuOpen(!isMenuOpen);
   };
+
+  useEffect(()=>{
+     setTimeout(()=>{
+      if(isMenuOpen){
+        setMenuOpen(false)
+      }
+    },2000)
+  },[isMenuOpen])
 
   return (
     <>
