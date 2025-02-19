@@ -1,18 +1,14 @@
 .homepage-main-container{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  /* gap: 10px; */
-  height: 450px;
-  margin-top: 5rem;
-  overflow-y: none;
   background-color: #edeec9;
-  height: 81.5dvh;
+  height: 75dvh;
 }
 
 .homepage-image{
-  width: 250px;
+  width: 18%;
   border-bottom: 5px solid red;
   border-top: 5px solid green;
   border-radius: 50%;
@@ -24,11 +20,17 @@
 .intro-text{
   font-size: 1.6rem;
   margin:auto;
-  width: 75%;
   padding: 10px;
 }
 
-/* .text-container{} */
+.homepage-items-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
 
 .highlighted-text{
   font-size: 2rem;
@@ -37,9 +39,58 @@
 
 @media(max-width:600px){
   .homepage-main-container{
-    margin-top: 5.5rem;
   }
   .homepage-image{
-    width: 45%;
+    width: 50%;
+  }
+
+}
+
+.animated-text{
+  content: '';
+  display: inline-block;
+  overflow: hidden;
+  animation: typing 2s ease alternate infinite, blink-cursor 1s ease infinite;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid black;
+}
+
+@keyframes typing {
+  0%{
+    width: 0ch;
+  }
+  100%{
+    width: 16ch;
+  }
+
+}
+
+@keyframes change-words {
+  0%{
+    content:'Software'
+  }
+
+  25%{
+    content: 'Software Engineer';
+  }
+
+  50%{
+    content: 'Software Programmer';
+  }
+
+  100%{
+    content: 'Web Developer';
+  }
+}
+
+@keyframes blink-cursor {
+  0%{
+    border-color: transparent;
+  }
+
+  100%{
+    border-color: solid black;
   }
 }
