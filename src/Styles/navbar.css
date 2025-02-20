@@ -3,7 +3,7 @@
   justify-content: flex-end;
   align-items: flex-start;
   background-color: black;
-  width: 100dvw;
+  /* width: 100dvw; */
   min-height: 15dvh;
   position: sticky;
   top:0;
