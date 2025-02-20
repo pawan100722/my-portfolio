@@ -4,11 +4,12 @@
 
 .experiences-page-main-heading{
   margin: auto;
-  width: 40%;
+  width: 90%;
   font-size: 3rem;
   font-weight: bolder;
   font-style: oblique;
   padding:30px;
+  text-align: center;
 }
 
 .experience-box{
