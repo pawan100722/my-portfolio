@@ -5,6 +5,7 @@ import { GithubIcon } from '../Icons/GithubIcon';
 import { LinkedinIcon } from '../Icons/LinkedinIcon';
 import { GmailIcon } from '../Icons/GmailIcon';
 import { WhatsappIcon } from '../Icons/WhatsappIcon';
+import { PhoneIcon } from '../Icons/PhoneIcon';
 
 export const About=()=>{
   return (
@@ -86,7 +87,14 @@ export const About=()=>{
         <a
           className="contact-icon"
           target="blank"
-          href="https://wa.me/8433004706?text=Hello, How are you toady?"
+          href="tel:8433004706"
+        >
+          <PhoneIcon />
+        </a>
+        <a
+          className="contact-icon"
+          target="blank"
+          href="https://wa.me/8433004706?text=Hello, How are you today?"
         >
           <WhatsappIcon />
         </a>
