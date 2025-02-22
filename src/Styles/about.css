@@ -87,11 +87,19 @@
   justify-content: center;
   align-items: center;
   column-gap: 25px;
-  margin: 10px 0 10px 0;
+  /* margin: 20px 0 20px 0; */
+  height: 80px;
 }
 
 .contact-icon{
   width: 40px;
   cursor: pointer;
   color: black;
+  transition-property: width;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+.contact-icon:hover{
+  width: 45px;
 }

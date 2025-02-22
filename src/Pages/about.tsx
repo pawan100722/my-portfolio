@@ -3,6 +3,8 @@ import { AboutDetail } from '../Components/about-detail';
 import { Footer } from '../Components/footer';
 import { GithubIcon } from '../Icons/GithubIcon';
 import { LinkedinIcon } from '../Icons/LinkedinIcon';
+import { GmailIcon } from '../Icons/GmailIcon';
+import { WhatsappIcon } from '../Icons/WhatsappIcon';
 
 export const About=()=>{
   return (
@@ -59,16 +61,34 @@ export const About=()=>{
       </div>
 
       <div className="contact-icons-container">
-        <a className="contact-icon" target='blank' href="https://github.com/pawan100722">
+        <a
+          className="contact-icon"
+          target="blank"
+          href="https://github.com/pawan100722"
+        >
           <GithubIcon />
         </a>
 
         <a
           className="contact-icon"
-          target='blank'
+          target="blank"
           href="https://www.linkedin.com/in/pawan-kumar-8477801a0"
         >
           <LinkedinIcon />
+        </a>
+        <a
+          className="contact-icon"
+          target="blank"
+          href="mailto:pawan100722@gmail.com"
+        >
+          <GmailIcon />
+        </a>
+        <a
+          className="contact-icon"
+          target="blank"
+          href="https://wa.me/8433004706?text=Hello, How are you toady?"
+        >
+          <WhatsappIcon />
         </a>
       </div>
       <Footer />
