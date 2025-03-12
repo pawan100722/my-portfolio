@@ -1,70 +1,93 @@
-.navbar-container{
+.navbar-container {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
   background-color: black;
-  width: 100dwv;
-  margin: 0 0 20px 0;
+  position: sticky;
+  top:0;
+  height:100px;
+  /* padding: 5px 0 5px 0; */
 }
 
-.navbar-routes-container{
-  display:flex;
-  justify-content: space-evenly;
-  gap: 10px;
-  padding: 30px;
-  transition-property: opacity;
-  transition-timing-function: liner;
-  transition-duration: 0.6s;
+.navbar-routes-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+  padding: 15px;
+  transition-property: height, opacity;
+  transition-timing-function: ease, ease;
+  transition-duration: 0.5s, 0.6s;
 }
 
-
-.navbar-list{
+.navbar-list {
   list-style: none;
   margin: 10px;
   width: 155px;
 }
 
-.navbar-link{
+.navbar-link {
+  text-align: center;
+  display: inline-block;
+  width: 180px;
   font-size: 2rem;
-  text-decoration: none;  
+  text-decoration: none;
   border-radius: 15px;
   color: white;
-  padding: 4px 8px 4px 8px;
+  padding: 4px 4px 4px 4px;
+  transition: font-size 0.2s linear;
 }
 
-.navbar-link:hover{
-  background-color: rgba(255, 255, 255, 0.748);
-  color:black;
+.navbar-link:hover {
+  font-size: 2.1rem;
+  color: rgb(200, 210, 220);
 }
 
-
-
-.hamburger-logo{
-  width: 4rem;
-  height: 3.5rem;
-  opacity:0;
+.hamburger-logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  opacity: 0;
   margin: 20px 10px 0 0;
-}
+  color: rgb(200, 210, 220);
+  cursor:pointer}
 
-@media (max-width:600px){
-  .navbar-routes-container{
+@media (max-width: 600px) {
+  .navbar-routes-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
     width: 100dvw;
     opacity: 0;
+    height: 0;
+    padding: 15px 0 15px 0;
   }
 
-  .hamburger-logo{
-    opacity:1;
+  .hamburger-logo {
+    opacity: 1;
+  }
+
+  .navbar-link {
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 15px;
+    color: white;
+    padding: 4px 4px 4px 4px;
+    transition: font-size 0.2s linear;
   }
 }
 
-.visible{
-  opacity:1
+@media (min-width: 600px) {
+  .hamburger-logo {
+    width: 0;
+  }
 }
 
+.visible {
+  opacity: 1;
+}
 
-
-
+.auto-height {
+  height: 40dvh;
+}

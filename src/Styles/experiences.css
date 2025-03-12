@@ -1,0 +1,102 @@
+.experiences-page-main-container{
+  background-color: #c2c5aa;
+}
+
+.experiences-page-main-heading{
+  margin: auto;
+  width: 90%;
+  font-size: 3rem;
+  font-weight: bolder;
+  font-style: oblique;
+  padding:30px;
+  text-align: center;
+}
+
+.experience-box{
+  /* padding: 2rem 10rem 2rem 10rem; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.experience-line{
+  width: 90%;
+  height: 2px;
+  border: 3px solid brown;
+}
+
+.experience-circle{
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 3px solid blue;
+}
+
+.experience-component-container{
+  background-color: #b7e4c7;
+  border: 3px solid rgb(161, 161, 99);
+  border-top-left-radius: 10%;
+  /* border-top-right-radius: 5%; */
+  border-bottom-right-radius: 10%;
+  /* border-bottom-left-radius: 5%; */
+  padding: 5rem 1rem 5rem 1rem;
+  margin: 10px;
+  width: 50%;
+}
+
+.experience-component-logo{
+  width: 120px;
+  border-radius: 50%;
+}
+
+.experience-component-designation{
+  font-size: 2rem;
+  font-weight: bolder;
+  font-style:oblique;
+}
+
+.experience-component-company-name{
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-style:oblique;
+}
+
+.experience-component-date-text{
+  font-size: 1rem;
+  color: orange;
+   font-weight: bold;
+  font-style:oblique;
+}
+
+.experience-component-normal-text{
+  font-size: 1rem;
+}
+
+@media(max-width: 600px){
+  .experience-component-normal-text{
+  font-size: 0.5rem;
+}
+
+.experience-component-date-text{
+  font-size: 0.5rem;
+}
+
+.experience-component-company-name{
+  font-size: 0.8rem;
+}
+
+.experience-component-designation{
+  font-size: 1rem;
+}
+
+.experiences-page-main-container{
+  /* margin-top: 5rem; */
+  /* margin-top: 2rem; */
+}
+
+.experiences-page-main-heading{
+  width: 70%;
+  font-size: 2rem;
+}
+}

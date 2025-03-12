@@ -1,4 +1,4 @@
-// import '../CSS/footer.css'
+import '../Styles/footer.css'
 
 export const Footer=()=>{
   return (

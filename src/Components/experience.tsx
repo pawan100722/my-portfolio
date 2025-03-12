@@ -1,13 +1,19 @@
-// import '../CSS/experience.css'
+import '../Styles/experiences.css'
 
 export const Experience=({logo,designation, companyName, from, to}: ExperienceDTO)=>{
   return (
-    <div className="experience-container">
-      <img className='experience-logo' src={logo}/>
-      <div className="designation-text">{designation}</div>
+    <div className="experience-component-container">
+      <img className="experience-component-logo" src={logo} />
+      <div className="experience-component-designation">{designation}</div>
       <div>
-        at <span className='company-name'>{companyName}</span>
-        &nbsp;<span className='normal-text'>From</span> <span className='date-text'>{from}</span> <span className='normal-text'>to</span> <span className='date-text'>{to}</span>
+        at{" "}
+        <span className="experience-component-company-name">{companyName}</span>
+        &nbsp;<span className="experience-component-normal-text">
+          From
+        </span>{" "}
+        <span className="experience-component-date-text">{from}</span>{" "}
+        <span className="experience-component-normal-text">to</span>{" "}
+        <span className="experience-component-date-text">{to}</span>
       </div>
     </div>
   );

@@ -1,0 +1,83 @@
+.skills-page-main-container{
+  font-style: oblique;
+  background-color: #F2D0A9;
+
+}
+
+.skill-page-main-heading{
+  font-size: 3rem;
+  font-weight: bolder;
+  padding: 30px;
+}
+
+.skill-page-main-description{
+  font-size: 1.5rem;
+  width: 90%;
+}
+
+.skill-page-head-container{
+  width: 90dvw;
+  margin:auto;
+  display: flex;
+  row-gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.skill-desc-main-container{
+  margin-top: 50px ;
+  margin-bottom: 2rem;
+}
+
+.skill-desc-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  background-color: antiquewhite;
+  margin: 20px auto;
+  padding: 25px;
+  width: 90%;
+  height: auto;
+  border-radius: 30px;
+}
+
+.skill-logo{
+  width:200px;
+  border-radius: 50%;
+}
+
+.skill-description{
+  font-size: 1.5rem;
+}
+
+.skill-heading{
+  display: inline-block;
+    margin-left: 6%;
+    font-size: 2.5rem;
+    font-style: oblique;
+}
+
+@media(max-width:600px){
+  .skills-page-main-container{
+    /* margin-top: 4rem; */
+  }
+
+  .skill-desc-container{
+    justify-content: center;
+    /* row-gap: 10px; */
+  }
+
+  .skill-heading{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .skill-page-main-heading{
+    font-size: 2rem;
+    width: 70%;
+  }
+}

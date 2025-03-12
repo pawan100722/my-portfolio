@@ -3,12 +3,94 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  background-color: #edeec9;
+  height: 76.8dvh;
 }
 
 .homepage-image{
-  width: 25%;
+  width: 18%;
   border-bottom: 5px solid red;
   border-top: 5px solid green;
   border-radius: 50%;
+  margin-top: 15px;
+}
+
+
+
+.intro-text{
+  font-size: 1.6rem;
+  margin:auto;
+  padding: 10px;
+}
+
+.homepage-items-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.highlighted-text{
+  font-size: 2rem;
+  color:teal;
+}
+
+@media(max-width:600px){
+  .homepage-main-container{
+  }
+  .homepage-image{
+    width: 50%;
+  }
+
+}
+
+.animated-text{
+  content: '';
+  display: inline-block;
+  overflow: hidden;
+  animation: typing 2s ease alternate infinite, blink-cursor 1s ease infinite;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid black;
+}
+
+@keyframes typing {
+  0%{
+    width: 0ch;
+  }
+  100%{
+    width: 16ch;
+  }
+
+}
+
+@keyframes change-words {
+  0%{
+    content:'Software'
+  }
+
+  25%{
+    content: 'Software Engineer';
+  }
+
+  50%{
+    content: 'Software Programmer';
+  }
+
+  100%{
+    content: 'Web Developer';
+  }
+}
+
+@keyframes blink-cursor {
+  0%{
+    border-color: transparent;
+  }
+
+  100%{
+    border-color: solid black;
+  }
 }
