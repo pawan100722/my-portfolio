@@ -3,18 +3,19 @@
   justify-content: flex-end;
   align-items: flex-start;
   background-color: black;
-  /* width: 100dvw; */
-  min-height: 15dvh;
   position: sticky;
   top:0;
+  height:100px;
+  /* padding: 5px 0 5px 0; */
 }
 
 .navbar-routes-container {
-  height: 15dvh;
+  height: 100%;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
-  padding: 30px;
+  align-items: center;
+  column-gap: 20px;
+  padding: 15px;
   transition-property: height, opacity;
   transition-timing-function: ease, ease;
   transition-duration: 0.5s, 0.6s;
@@ -27,6 +28,9 @@
 }
 
 .navbar-link {
+  text-align: center;
+  display: inline-block;
+  width: 180px;
   font-size: 2rem;
   text-decoration: none;
   border-radius: 15px;
@@ -41,11 +45,12 @@
 }
 
 .hamburger-logo {
-  width: 4rem;
-  height: 3.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
   opacity: 0;
   margin: 20px 10px 0 0;
-}
+  color: rgb(200, 210, 220);
+  cursor:pointer}
 
 @media (max-width: 600px) {
   .navbar-routes-container {
@@ -84,5 +89,5 @@
 }
 
 .auto-height {
-  height: 35dvh;
+  height: 40dvh;
 }

@@ -39,11 +39,11 @@ export const Navbar = () => {
                 My Skills
               </a>
             </li>
-            {/* <li className="navbar-list">
+            <li className="navbar-list">
                 <a href={`#/my-projects`} className="navbar-link">
                   My Projects
                 </a>
-              </li> */}
+              </li>
             <li className="navbar-list">
               <a href={`#/experience`} className="navbar-link">
                 Experience
@@ -56,7 +56,7 @@ export const Navbar = () => {
             </li>
           </ul>
           <div
-            className="hamburger-logo navbar-link"
+            className="hamburger-logo"
             onClick={handleHamburgerClick}
           >
             <HamburgerIcon />

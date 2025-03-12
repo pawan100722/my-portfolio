@@ -1,0 +1,66 @@
+.projects-page-main-heading{
+  font-size: 3rem;
+  width: 30%;
+  font-style: oblique;
+  margin: auto;
+  padding:30px;
+  font-weight: bolder;
+}
+.project-component-container{
+  width: 500px;
+  border:2px solid black;
+  border-radius:5px;
+  box-shadow: -6px 6px 0 grey;
+  margin: 20px;
+  text-align: center;
+  transition: width 0.5s ease-out;
+  transform: translateX(80%); 
+  background-color: beige;
+}
+
+
+.left-animation{
+  animation: show-container-left 1s ease 1;
+}
+
+@keyframes show-container-left {
+  0%{
+    transform: translateX(-500px);
+  }
+
+  100%{
+    transform: translateX(80%);
+  }
+  
+}
+
+.project-component-container img{
+  width: 100%;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.project-component-container h1{
+  padding: 10px;
+}
+
+.project-component-container p{
+  margin: auto;
+  width: 70%;
+  opacity:0.1;
+  padding: 10px 0 10px;
+  transition: opacity 0.5s ease;
+}
+
+.project-component-container:hover >  p{
+ opacity: 1;
+}
+
+.increase-width{
+  width: 550px;
+}
+
+.decrease-width{
+  width: 500px;
+}
+
