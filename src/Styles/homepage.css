@@ -39,6 +39,7 @@
 
 @media(max-width:600px){
   .homepage-main-container{
+    height: 81.1dvh;
   }
   .homepage-image{
     width: 50%;

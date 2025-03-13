@@ -5,8 +5,8 @@
   background-color: black;
   position: sticky;
   top:0;
-  height:100px;
-  /* padding: 5px 0 5px 0; */
+  /* height:100px; */
+  height: auto;
 }
 
 .navbar-routes-container {
@@ -66,6 +66,8 @@
 
   .hamburger-logo {
     opacity: 1;
+    margin: 20px;
+    /* padding: 50px; */
   }
 
   .navbar-link {

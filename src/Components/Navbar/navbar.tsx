@@ -2,8 +2,6 @@ import  { useEffect, useState } from "react";
 import "../../Styles/navbar.css";
 import { NavbarRoutes } from "./navbar-routes";
 import { HamburgerIcon } from "../../Icons/HamburgerIcon";
-// import { UserIcon } from "../../Icons/UserIcon";
-// import logo from '../../Images/logo_pic.jpg'
 
 export const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState<boolean>(false);

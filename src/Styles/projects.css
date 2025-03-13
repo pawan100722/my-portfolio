@@ -31,7 +31,6 @@
   100%{
     transform: translateX(80%);
   }
-  
 }
 
 .project-component-container img{
@@ -62,5 +61,36 @@
 
 .decrease-width{
   width: 500px;
+}
+
+@keyframes show-container-left-sm {
+  0%{
+    transform: translateX(-500px);
+  }
+
+  100%{
+    transform: translateX(5%);
+  }
+}
+
+@media(max-width: 600px){
+  .left-animation{
+  animation: show-container-left-sm 1s ease 1;
+}
+
+.project-component-container{
+  transform: translateX(5%);
+  width: 300px;
+}
+
+.projects-page-main-heading{
+  font-size: 2rem;
+  width: 70%;
+  text-align: center;
+}
+
+.project-component-container p{
+  opacity: 1;
+}
 }
 
