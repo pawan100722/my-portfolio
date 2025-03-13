@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Experience } from '../Components/experience';
 import { Footer } from '../Components/footer';
 import milestoneLogo from '../Logos/milestoneos-logo.jpg';
@@ -5,6 +6,11 @@ import pragmaLogo from '../Logos/pragma-logo.jpg';
 import '../Styles/experiences.css'
 
 export const Experiences=()=>{
+
+  useEffect(()=>{
+      window.scrollTo(0,0)
+    },[])
+    
   return (
     <div className="experiences-page-main-container">
       <h1 className="experiences-page-main-heading">

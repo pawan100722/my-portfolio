@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import '../Styles/about.css';
 import { AboutDetail } from '../Components/about-detail';
 import { Footer } from '../Components/footer';
@@ -8,6 +9,11 @@ import { WhatsappIcon } from '../Icons/WhatsappIcon';
 import { PhoneIcon } from '../Icons/PhoneIcon';
 
 export const About=()=>{
+
+  useEffect(()=>{
+      window.scrollTo(0,0)
+    },[])
+    
   return (
     <div className="about-page-main-container">
       <h1 className="about-page-main-heading">About</h1>

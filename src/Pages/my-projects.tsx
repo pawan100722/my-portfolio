@@ -1,8 +1,12 @@
+import { useEffect } from 'react';
 import '../Styles/projects.css';
 import { Project } from "../Components/project.tsx";
 import whatsappWebCloneImage from "../Images/projects/whatsapp-web-clone.png";
 
 export const MyProjects=()=>{
+  useEffect(()=>{
+      window.scrollTo(0,0)
+    },[])
 
   return (
     <div className="projects-page-container">

@@ -6,8 +6,15 @@ import reactLogo from '../Logos/reactjs-logo.jpg';
 import nodeLogo from '../Logos/nodejs-logo.png';
 import '../Styles/skills.css'
 import { Footer } from '../Components/footer';
+import { useEffect } from 'react';
 
 export const MySkills=()=>{
+
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
+
+
   return (
     <div className="skills-page-main-container">
       <div className="skill-page-head-container">

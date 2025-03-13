@@ -1,4 +1,4 @@
-.homepage-main-container{
+.homepage-main-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -7,7 +7,7 @@
   height: 76.8dvh;
 }
 
-.homepage-image{
+.homepage-image {
   width: 18%;
   border-bottom: 5px solid red;
   border-top: 5px solid green;
@@ -15,15 +15,13 @@
   margin-top: 15px;
 }
 
-
-
-.intro-text{
+.intro-text {
   font-size: 1.6rem;
-  margin:auto;
+  margin: auto;
   padding: 10px;
 }
 
-.homepage-items-container{
+.homepage-items-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -32,26 +30,36 @@
   margin: auto;
 }
 
-.highlighted-text{
+.highlighted-text {
   font-size: 2rem;
-  color:teal;
+  color: teal;
 }
 
-@media(max-width:600px){
-  .homepage-main-container{
+@media (max-width: 600px) {
+  .homepage-main-container {
     height: 81.1dvh;
   }
-  .homepage-image{
+  .homepage-image {
     width: 50%;
   }
-
 }
 
-.animated-text{
-  content: '';
+/* .animated-text {
   display: inline-block;
   overflow: hidden;
-  animation: typing 2s ease alternate infinite, blink-cursor 1s ease infinite;
+  animation: typing 2s ease alternate infinite,blink-cursor 1s ease infinite;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid black;
+} */
+
+.animated-text::after{
+  content:'';
+  font-size: 3rem;
+  display: inline-block;
+  overflow: hidden;
+  animation: typing 2s alternate infinite,change-words 16s infinite,blink-cursor 0.3s ease infinite alternate;
   white-space: nowrap;
   display: flex;
   align-items: center;
@@ -59,39 +67,38 @@
 }
 
 @keyframes typing {
-  0%{
+  0% {
     width: 0ch;
   }
-  100%{
-    width: 16ch;
+  100% {
+    width: 8ch;
   }
-
 }
 
 @keyframes change-words {
-  0%{
-    content:'Software'
+  0%,24% {
+    content: "HTML";
   }
 
-  25%{
-    content: 'Software Engineer';
+  25%,49%{
+    content: 'CSS';
   }
 
-  50%{
-    content: 'Software Programmer';
+  50%,99% {
+    content: "React.JS";
+  }
+  100% {
+    content: "Web Development";
   }
 
-  100%{
-    content: 'Web Developer';
-  }
 }
 
 @keyframes blink-cursor {
-  0%{
+  0% {
     border-color: transparent;
   }
 
-  100%{
+  100% {
     border-color: solid black;
   }
 }
