@@ -37,22 +37,13 @@
 
 @media (max-width: 600px) {
   .homepage-main-container {
-    height: 81.1dvh;
+    height: 78dvh;
   }
   .homepage-image {
     width: 50%;
   }
 }
 
-/* .animated-text {
-  display: inline-block;
-  overflow: hidden;
-  animation: typing 2s ease alternate infinite,blink-cursor 1s ease infinite;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  border-right: 1px solid black;
-} */
 
 .animated-text::after{
   content:'';
