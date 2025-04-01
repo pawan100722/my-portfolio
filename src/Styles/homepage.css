@@ -50,11 +50,10 @@
   font-size: 3rem;
   display: inline-block;
   overflow: hidden;
-  animation: typing 2s alternate infinite,change-words 16s infinite,blink-cursor 0.3s ease infinite alternate;
+  animation: typing 2s alternate infinite,change-words 20s infinite;
   white-space: nowrap;
   display: flex;
   align-items: center;
-  border-right: 1px solid black;
 }
 
 @keyframes typing {
@@ -65,26 +64,29 @@
     width: 8ch;
   }
 }
-
+/* HTML, CSS, Javascript, React.JS, Node.JS, Nest.JS */
 @keyframes change-words {
-  0%,24% {
+  0%,20% {
     content: "HTML";
   }
 
-  25%,49%{
+  21%,40%{
     content: 'CSS';
   }
 
-  50%,99% {
+  41%,60% {
     content: "React.JS";
   }
-  100% {
-    content: "Web Development";
+  61%, 80% {
+    content: "Node.JS";
+  }
+  81%,100%{
+    content: 'Nest.JS';
   }
 
 }
 
-@keyframes blink-cursor {
+/* @keyframes blink-cursor {
   0% {
     border-color: transparent;
   }
@@ -92,4 +94,4 @@
   100% {
     border-color: solid black;
   }
-}
+} */
