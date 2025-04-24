@@ -2,7 +2,8 @@ import { useEffect } from 'react';
 import '../Styles/projects.css';
 import { Project } from "../Components/project.tsx";
 import whatsappWebCloneImage from "../Images/projects/whatsapp-web-clone.png";
-import amazonCloneImage from '../Images/projects/amazon-clone.png'
+import amazonCloneImage from '../Images/projects/amazon-clone.png';
+import newsImage from '../Images/projects/news.png';
 
 export const MyProjects=()=>{
   useEffect(()=>{
@@ -13,7 +14,7 @@ export const MyProjects=()=>{
     <div className="projects-page-container">
       <h1 className="projects-page-main-heading">My Projects</h1>
       <Project
-      id='project1'
+        id="project1"
         image={whatsappWebCloneImage}
         projectURL="https://pawan100722.github.io/whatsapp-web-clone/"
         title="Whatsapp Web Clone"
@@ -21,12 +22,20 @@ export const MyProjects=()=>{
         animation="left-animation"
       />
       <Project
-      id='project2'
+        id="project2"
         image={amazonCloneImage}
         projectURL="https://pawan100722.github.io/amazon-clone/"
         title="Amazon Clone"
         description="This project is a clone/sample of the amazon shopping app"
-        animation='right-animation'
+        animation="right-animation"
+      />
+      <Project
+        id="project3"
+        image={newsImage}
+        projectURL="https://pawan100722.github.io/All-Time-News/"
+        title="News App"
+        description="This project is a about the news app. It gives latest news"
+        animation="left-animation"
       />
     </div>
   );
