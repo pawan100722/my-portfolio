@@ -1,8 +1,8 @@
-export const Project = ({ id, image, title, description, projectURL,animation }: ProjectDTO) => {
+export const Project = ({ id, image, title, description, projectURL }: ProjectDTO) => {
 
   return (
     <div
-      className={`project-component-container ${animation}`}
+      className={`project-component-container `}
       id={id}
     >
       <a href={projectURL} target="blank">
@@ -20,5 +20,4 @@ interface ProjectDTO {
   title: string;
   description: string;
   projectURL: string;
-  animation: string
 }

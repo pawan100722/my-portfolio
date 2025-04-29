@@ -1,9 +1,10 @@
 import { useEffect } from 'react';
 import '../Styles/projects.css';
 import { Project } from "../Components/project.tsx";
-import whatsappWebCloneImage from "../Images/projects/whatsapp-web-clone.png";
-import amazonCloneImage from '../Images/projects/amazon-clone.png';
 import newsImage from '../Images/projects/news.png';
+import amazonCloneImage from '../Images/projects/amazon-clone.png';
+import whatsappWebCloneImage from "../Images/projects/whatsapp-web-clone.png";
+import googleImage from '../Images/projects/google-clone.png';
 
 export const MyProjects=()=>{
   useEffect(()=>{
@@ -19,7 +20,6 @@ export const MyProjects=()=>{
         projectURL="https://pawan100722.github.io/whatsapp-web-clone/"
         title="Whatsapp Web Clone"
         description="This project is a clone/sample of the web version of the whatsapp app"
-        animation="left-animation"
       />
       <Project
         id="project2"
@@ -27,7 +27,6 @@ export const MyProjects=()=>{
         projectURL="https://pawan100722.github.io/amazon-clone/"
         title="Amazon Clone"
         description="This project is a clone/sample of the amazon shopping app"
-        animation="right-animation"
       />
       <Project
         id="project3"
@@ -35,7 +34,13 @@ export const MyProjects=()=>{
         projectURL="https://pawan100722.github.io/All-Time-News/"
         title="News App"
         description="This project is a about the news app. It gives latest news"
-        animation="left-animation"
+      />
+      <Project
+        id="project4"
+        image={googleImage}
+        projectURL="https://pawan100722.github.io/google-clone/"
+        title="Google Search Clone"
+        description="This project is the clone of google search"
       />
     </div>
   );
