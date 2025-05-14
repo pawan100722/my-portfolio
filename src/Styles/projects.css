@@ -1,6 +1,5 @@
 .projects-page-container{
   background-color: #a3b18a;
-  /* padding: 10px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,10 +21,7 @@
   border:2px solid black;
   border-radius:5px;
   box-shadow: -6px 6px 0 grey;
-  /* margin: 20px; */
   text-align: center;
-  /* transition: width 0.5s ease-out; */
-  /* transform: translateX(100%);  */
   background-color: beige;
   margin-bottom: 50px;
 }
@@ -84,6 +80,10 @@
 
 .project-component-container a:hover >  p{
  opacity: 1;
+}
+
+.footer-container{
+  width: 99.5dvw;
 }
 
 /* .increase-width{

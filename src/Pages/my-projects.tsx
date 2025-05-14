@@ -2,9 +2,11 @@ import { useEffect } from 'react';
 import '../Styles/projects.css';
 import { Project } from "../Components/project.tsx";
 import newsImage from '../Images/projects/news.png';
+import googleImage from '../Images/projects/google-clone.png';
 import amazonCloneImage from '../Images/projects/amazon-clone.png';
 import whatsappWebCloneImage from "../Images/projects/whatsapp-web-clone.png";
-import googleImage from '../Images/projects/google-clone.png';
+import weatherAppImage from '../Images/projects/weather-app.png';
+import { Footer } from '../Components/footer.tsx';
 
 export const MyProjects=()=>{
   useEffect(()=>{
@@ -42,6 +44,16 @@ export const MyProjects=()=>{
         title="Google Search Clone"
         description="This project is the clone of google search"
       />
+      <Project
+        id="project5"
+        image={weatherAppImage}
+        projectURL="https://pawan100722.github.io/my-weather-app/"
+        title="Weather Forecast App"
+        description="This project is useful for weather info and weather forecast"
+      />
+      <div className="footer-container">
+        <Footer/>
+      </div>
     </div>
   );
 }
