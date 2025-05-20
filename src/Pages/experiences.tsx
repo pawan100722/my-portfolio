@@ -39,7 +39,9 @@ export const Experiences=()=>{
           to="Oct 2024"
         />
       </div>
+      <div className="experience-footer">
       <Footer/>
+      </div>
     </div>
   );
 }

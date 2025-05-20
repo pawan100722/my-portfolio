@@ -1,10 +1,10 @@
 .homepage-main-container {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   background-color: #edeec9;
-  height: 76.8dvh;
+  height: 76dvh;
 }
 
 .homepage-image {
@@ -27,6 +27,7 @@
   justify-content: center;
   align-items: center;
   width: 90%;
+  height:70dvh;
   margin: auto;
 }
 
@@ -37,7 +38,7 @@
 
 @media (max-width: 600px) {
   .homepage-main-container {
-    height: 78dvh;
+    height: 79dvh;
   }
   .homepage-image {
     width: 50%;
@@ -86,12 +87,7 @@
 
 }
 
-/* @keyframes blink-cursor {
-  0% {
-    border-color: transparent;
-  }
-
-  100% {
-    border-color: solid black;
-  }
-} */
+.homepage-footer{
+  width: 100dvw;
+  height: 10.8dvh;
+}

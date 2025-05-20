@@ -1,8 +1,9 @@
 .footer-container{
   background-color: black;
   color:white;
-  max-width: 100dvw;
-  height: 10dvh;
+  min-width: 100%;
+  /* height: 10dvh; */
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

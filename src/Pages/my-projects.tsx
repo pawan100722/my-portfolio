@@ -51,7 +51,7 @@ export const MyProjects=()=>{
         title="Weather Forecast App"
         description="This project is useful for weather info and weather forecast"
       />
-      <div className="footer-container">
+      <div className="projects-footer">
         <Footer/>
       </div>
     </div>

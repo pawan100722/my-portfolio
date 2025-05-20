@@ -55,7 +55,9 @@ export const MySkills=()=>{
         logo={nodeLogo}
       />
 
+     <div className="skills-footer">
       <Footer/>
+     </div>
     </div>
   );
 }

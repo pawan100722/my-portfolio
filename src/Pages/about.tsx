@@ -105,7 +105,9 @@ export const About=()=>{
           <WhatsappIcon />
         </a>
       </div>
+      <div className="about-footer">
       <Footer />
+      </div>
     </div>
   );
 }
