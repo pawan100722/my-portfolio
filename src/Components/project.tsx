@@ -4,8 +4,6 @@ export const Project = ({ id, image:imageSrc, title, description, projectURL }: 
   const image = new Image();
   image.src= imageSrc;
   image.alt=title;
-  image.width=500;
-  image.height=200;
   return (
     <div
       className={`project-component-container`}

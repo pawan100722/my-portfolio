@@ -5,9 +5,7 @@ export const ImageLoader = ({ image, style={}}:{image:any, style?:any}) => (
   <div>
     <LazyLoadImage
       alt={image.alt}
-      height={image.height}
       src={image.src} 
-      width={image.width}
       effect="blur"
       style={style}
     />

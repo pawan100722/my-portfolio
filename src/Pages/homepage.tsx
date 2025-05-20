@@ -7,9 +7,6 @@ export const Homepage = () => {
   const image = new Image();
   image.src = myImage;
   image.alt = "My Profile Image";
-  image.width = 200;
-  image.height = 320;
-  image.style.borderRadius = "50%";
 
   return (
     <>
@@ -18,6 +15,8 @@ export const Homepage = () => {
           <ImageLoader
             image={image}
             style={{
+              width:'200px',
+              height:'320px',
               borderRadius: "50%",
               margin: "10px",
               borderBottom: "5px solid red",
