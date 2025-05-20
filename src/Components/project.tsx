@@ -13,7 +13,7 @@ export const Project = ({ id, image:imageSrc, title, description, projectURL }: 
     >
       <a href={projectURL} target="blank">
         
-        <ImageLoader image={image}/>
+        <ImageLoader image={image} style={{width:'99%', height:'100%'}}/>
         <h1>{title}</h1>
         <p>{description}</p>
       </a>
