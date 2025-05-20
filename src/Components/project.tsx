@@ -1,12 +1,19 @@
-export const Project = ({ id, image, title, description, projectURL }: ProjectDTO) => {
+import { ImageLoader } from "./ImageLoader";
 
+export const Project = ({ id, image:imageSrc, title, description, projectURL }: ProjectDTO) => {
+  const image = new Image();
+  image.src= imageSrc;
+  image.alt=title;
+  image.width=500;
+  image.height=200;
   return (
     <div
-      className={`project-component-container `}
+      className={`project-component-container`}
       id={id}
     >
       <a href={projectURL} target="blank">
-        <img src={image} alt={`${title}-project-image`} />
+        
+        <ImageLoader image={image}/>
         <h1>{title}</h1>
         <p>{description}</p>
       </a>

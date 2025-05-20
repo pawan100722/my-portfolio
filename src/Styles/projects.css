@@ -55,12 +55,6 @@
   }
 }
 
-.project-component-container img{
-  width: 100%;
-  cursor: pointer;
-  border-radius: 2px;
-}
-
 .project-component-container a{
   text-decoration: none;
   color: black;
