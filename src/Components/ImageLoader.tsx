@@ -1,7 +1,7 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const ImageLoader = ({ image, style={}}:{image:any, style:any}) => (
+export const ImageLoader = ({ image, style={}}:{image:any, style?:any}) => (
   <div>
     <LazyLoadImage
       alt={image.alt}
