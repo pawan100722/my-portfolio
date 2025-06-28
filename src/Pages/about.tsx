@@ -63,7 +63,7 @@ export const About=()=>{
       <div className="about-contact-container">
         <h1 className="about-skill-heading">Contact Information</h1>
         <AboutDetail title="Email" detail="pawan100722@gmail.com" />
-        <AboutDetail title="Phone" detail="8433004706" />
+        <AboutDetail title="Phone" detail="9084353036" />
         {/* <AboutDetail title="Email" detail="pawan100722@gmail.com" /> */}
       </div>
 
@@ -93,14 +93,14 @@ export const About=()=>{
         <a
           className="contact-icon"
           target="blank"
-          href="tel:8433004706"
+          href="tel:9084353036"
         >
           <PhoneIcon />
         </a>
         <a
           className="contact-icon"
           target="blank"
-          href="https://wa.me/8433004706?text=Hello, How are you today?"
+          href="https://wa.me/9084353036?text=Hello, How are you today?"
         >
           <WhatsappIcon />
         </a>
