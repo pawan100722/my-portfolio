@@ -20,7 +20,7 @@ export const About=()=>{
       <div className="about-summary-container">
         <p className="about-short-summary">
           I am Pawan Kumar, a software engineer with over 2 years of experience
-          in web development. Based in Bareilly, Uttar Pradesh, India, I hold a
+          in web development. Based in Delhi, India, I hold a
           BCA and an MCA degree. My expertise lies in both backend and frontend
           technologies, and I have worked on several projects that involve
           creating scalable and efficient web applications.
